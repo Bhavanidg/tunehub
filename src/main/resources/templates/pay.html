@@ -37,7 +37,7 @@ function createOrder() {
         .done(function(order) {
             order = JSON.parse(order);
             var options = {
-                "key": "rzp_test_pvGIc9JvXWZTVS",
+                "key": "rzp_test_EEX6Iz3dtf7AtW",
                 "amount": order.amount_due.toString(),
                 "currency": "INR",
                 "name": "Tune Hub",
@@ -70,9 +70,11 @@ function verifyPayment(orderId, paymentId, signature) {
      $.post("/verify", { orderId: orderId, paymentId: paymentId, signature: signature })
          .done(function(isValid) {
              if (isValid) {
-                 console.log("Payment successful");
+                 //console.log("Payment successful");
+                 alert("Payment successful");
              } else {
-                 console.log("Payment failed");
+                // console.log("Payment failed");
+                alert("Payment failed");
              }
          })
          .fail(function(error) {
