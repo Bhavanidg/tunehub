@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+</head>
+<body>
+<form action="register" method="post">
+	<label>UserName: </label>
+		<input type="text" name="username"/>
+		<br>
+	<label>Email: </label>
+		<input type="email" name="email"/>
+		<br>	
+	<label>Password: </label>
+		<input type="password" name="password"/>
+		
+	<label>Gender: </label>
+		F<input type="radio" name="gender" id="radio1" value="male">
+		M<input type="radio" name="gender" id="radio2" value="female">
+		O<input type="radio" name="gender" id="radio3" value="other">
+		<br>
+		
+	<label>Role: </label>
+	Admin<input type="radio" name="role" value="admin">
+	Customer<input type="radio" name="role" value="customer"/>
+	<br>
+	
+	<label>Address</label>
+	<textarea name="address"></textarea>
+	<br>
+	
+	<input type="submit"/>
+		
+		</form>
+		
+	
+
+
+</body>
+</html>
